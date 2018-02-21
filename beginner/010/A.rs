@@ -6,6 +6,5 @@ fn read_string() -> String {
 
 fn main() {
     let mut s = read_string();
-    s.push_str("pp");
-    println!("{}", s);
+    println!("{}", s + "pp");
 }
