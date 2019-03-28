@@ -56,19 +56,6 @@ macro_rules! input {
 }
 
 fn main() {
-    let n = input!(i64);
-    let a_list = input!(i64; n);
-    let mut cnt = 0;
-    for a in a_list {
-        let mut i = 1;
-        loop {
-            if a % 2i64.pow(i) != 0 {
-                cnt += i - 1;
-                break
-            }
-            i += 1;
-        }
-    }
-    println!("{}", cnt);
+    let s = input!(String);
+    let k = input!(usize);
 }
->>>>>>> 54869ef6cf9784bc049279d63afb371d96634980

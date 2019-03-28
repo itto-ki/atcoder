@@ -55,20 +55,28 @@ macro_rules! input {
     };
 }
 
+
 fn main() {
-    let n = input!(i64);
-    let a_list = input!(i64; n);
-    let mut cnt = 0;
-    for a in a_list {
-        let mut i = 1;
-        loop {
-            if a % 2i64.pow(i) != 0 {
-                cnt += i - 1;
-                break
+    const N: usize = 100000;
+    let mut dp = vec![0; N+1];
+    dp[0] = 0;
+    for i in 1..(N+1) {
+        dp[i] = std::i32::MAX;
+        let mut power = 1;
+        while power <= i {
+            if dp[i] > dp[i - power] + 1 {
+                dp[i] = dp[i - power] + 1;
             }
-            i += 1;
+            power *= 6;
+        }
+        power = 1;
+        while power <= i {
+            if dp[i] > dp[i - power] + 1 {
+                dp[i] = dp[i - power] + 1;
+            }
+            power *= 9;
         }
     }
-    println!("{}", cnt);
+    let n = input!(usize);
+    println!("{}", dp[n]);
 }
->>>>>>> 54869ef6cf9784bc049279d63afb371d96634980
