@@ -54,3 +54,6 @@ macro_rules! input {
         }
     };
 }
+
+fn main() {
+}
