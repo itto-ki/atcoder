@@ -4,4 +4,4 @@ CURRENT_DIR_PATH=$(pwd)
 DIRS=(`echo $CURRENT_DIR_PATH | tr '/' ' '`)
 CONTEST=${DIRS[${#DIRS[@]}-2]}
 NUMBER=${DIRS[${#DIRS[@]}-1]}
-atarg $CONTEST $NUMBER $1 $(pwd)/$1
+rustc $(pwd)/$1.rs && atarg $CONTEST $NUMBER $1 $(pwd)/$1
