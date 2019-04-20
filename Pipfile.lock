@@ -18,10 +18,10 @@
     "default": {
         "atarg": {
             "hashes": [
-                "sha256:550e8813c512dcc09214797bc4bef44729f08ef4ed2eabbf96b28354bcefd8f5"
+                "sha256:f080145bf764eed252dc9e0ff4515ce6af95070ffff16d8f611f05dac4ad35f5"
             ],
             "index": "pypi",
-            "version": "==1.0.2"
+            "version": "==1.1.4"
         },
         "beautifulsoup4": {
             "hashes": [
@@ -68,10 +68,10 @@
         },
         "urllib3": {
             "hashes": [
-                "sha256:61bf29cada3fc2fbefad4fdf059ea4bd1b4a86d2b6d15e1c7c0b582b9752fe39",
-                "sha256:de9529817c93f27c8ccbfead6985011db27bd0ddfcdb2d86f3f663385c6a9c22"
+                "sha256:4c291ca23bbb55c76518905869ef34bdd5f0e46af7afe6861e8375643ffee1a0",
+                "sha256:9a247273df709c4fedb38c711e44292304f73f39ab01beda9f6b9fc375669ac3"
             ],
-            "version": "==1.24.1"
+            "version": "==1.24.2"
         }
     },
     "develop": {}
