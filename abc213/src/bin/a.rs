@@ -12,10 +12,9 @@ use superslice::*;
 
 fn main() {
     input! {
-        n: usize,
-        s: [usize; n],
-        t: [usize; n],
+        a: u32,
+        b: u32,
     }
 
-    println!("{} {:?} {:?}", n, s, t);
+    println!("{}", a ^ b);
 }
