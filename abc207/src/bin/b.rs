@@ -12,5 +12,13 @@ use superslice::*;
 
 fn main() {
     input!{
+        (a, b, c, d): (f64, f64, f64, f64),
     }
+
+    if c * d - b <= 0.0 {
+        println!("-1");
+        return;
+    }
+
+    println!("{}", (a / (c * d - b)).ceil() as u64);
 }
